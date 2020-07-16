@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Methods in JS</title>
+</head>
+<body>
+    <script>
+
+        // prints the value
+        console.log("Hey");
+
+        // clears the console 
+        console.clear();
+
+        // prints if expression is false
+        console.assert(1<0,"good");
+
+        //counts how many time called
+        for(i=0;i<3;i++){
+        console.count();}
+
+        //countset
+        console.countReset();
+
+        console.count()
+
+        //error
+        console.error("mistake has been made");
+
+        //group function
+        console.groupCollapsed("new label");
+        console.log("First");
+        console.groupEnd();
+        console.group("label");
+        console.groupEnd();
+        console.log("Second");
+        
+        
+        //info
+        console.info("information");
+        
+        //table
+        console.table({f:'1',f2:'2',f3:'3'});
+        
+        //time and timeend:
+        console.time();
+        for(i=0;i<1;i++)
+        {
+            console.log("happy"+i);
+            console.trace();
+        }
+        console.timeEnd();
+
+        //warn
+        console.warn("warned you");;
+
+
+
+
+        
+
+    </script>
+    
+</body>
+</html>

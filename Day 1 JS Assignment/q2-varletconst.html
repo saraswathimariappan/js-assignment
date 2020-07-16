@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>letvarconst</title>
+</head>
+<body>
+    <script>
+//const--constant and it cannot be changed
+
+const a ='apple';
+console.log(a);
+//we cannot redefine as a is constant a=orange;
+
+//var--it's scope is defined inside the function
+{
+var c='banana';
+console.log(c);
+}
+//it will work as global defined console.log(c);
+
+//let--It can reassigned in loops or swap
+
+{let b ='Mango';
+console.log(b);
+}
+//--block scope and it will throw undefined here console.log(b);
+for(i=0;i<3;i++)
+{
+    b=i;
+    console.log(b);
+}
+//reassgined to the i values as b is defined as let
+
+    </script>
+    
+</body>
+</html>
