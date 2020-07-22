@@ -1,0 +1,91 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User</title>
+    </head>
+    <body>
+        <script>
+
+    class User{
+        constructor(name,age,email)
+        {
+           this.name=name;
+           this.age=age;
+           this.email=email;
+           this.courses= [];
+           }
+        
+        login()
+         {
+           console.log(`${this.name} has logged In`);
+          }
+    
+         logout()
+            {
+            console.log(`${this.name} has logged Out`);
+            }
+        
+    }
+
+    
+    class Moderator extends User{
+     super(name,age,email)
+     {
+         this.lucoins=lucoins;
+        
+     }
+     lucoins=0;
+    
+    addcoins()
+    {
+        this.lucoins++;
+        console.log(`${this.name} has ${this.lucoins}`);
+
+    } 
+    removecoins()
+    {
+        this.lucoins--;
+        console.log(`${this.name} has ${this.lucoins}`);
+
+    } 
+
+    }
+
+    class Admin extends Moderator{
+
+        addcourse(user,course)
+        {
+            user.courses.push(course);
+            console.log(user);
+
+        }
+        removecourse(user,course)
+        {
+            
+            user.courses.pop(course);
+            console.log(user);
+
+        }
+    }
+
+    let user1=new User('ria',21,'ria@gmail.com');
+    let user2=new User('dia',23,'dia@gmail.com');
+    let user3=new User('sia',24,'sia@gmail.com');
+    let mod1=new Moderator('tia',25,'tia@gmail.com');
+    let admin=new Admin('qia',25,'qia@gmail.com');
+    let arr=[user1,user2,user3,mod1,admin];
+
+   user1.login();
+   mod1.addcoins();
+   mod1.addcoins();
+   mod1.removecoins();
+   mod1.addcoins();
+   mod1.login();
+   admin.addcourse(user1,'JS');
+   admin.addcourse(user1,'Python');
+    admin.removecourse(user1,'Python');
+        </script>
+    </body>
+    </html>

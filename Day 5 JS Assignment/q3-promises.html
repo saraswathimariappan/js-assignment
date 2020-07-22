@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promises</title>
+</head>
+<body>
+    <script>
+        
+async function fetchfun()
+
+{ 
+
+    const Response=await fetch('https://jsonplaceholder.typicode.com/todos');
+    const data=await Response.json();
+    data.forEach(element => {
+    if(element.completed==(true))
+    {
+     const number=console.log(element);
+       
+    }})   
+    
+}
+
+
+
+function completed()
+{
+return new Promise((resolve, reject)=>{
+    setTimeout(()=>
+    {
+    if(number=true)
+    {
+        resolve();
+    }
+    
+    else{
+        reject("An Error occurred");
+    }
+    },2000)
+})
+}
+
+fetchfun();
+completed()
+.then(data=>console.log("Done"));
+
+
+  </script>
+
+
+</body>
+</html>
