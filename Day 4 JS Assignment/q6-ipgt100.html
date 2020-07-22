@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input greater than 100</title>
+</head>
+<body>
+    <script>
+
+      let numbers;
+                function ask(numbers, yes, no)
+        {
+            if(numbers>100)
+            yes()
+            else no();
+        }
+
+        ask(
+         numbers = +prompt("Enter a number greater than 100"),
+            function() {console.log(numbers);},
+            function() {
+                         do{
+                         numbers=+prompt("Enter a number greater than 100");      
+                         }while(numbers<100);
+                         console.log(numbers);}
+        );
+
+    
+     
+     
+    </script>
+    
+</body>
