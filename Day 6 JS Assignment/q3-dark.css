@@ -1,0 +1,21 @@
+h1{
+    background-color:green;
+    width:100%;
+}
+
+v1{
+    background-color: purple;
+}
+
+button{
+    background-color: red;
+    width: 200px;
+    height: 40px;
+    text-decoration: greenyellow;
+    box-shadow: ivory;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+}
